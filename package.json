@@ -1,0 +1,31 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "My Personal Website",
+  "main": "app.mjs",
+  "scripts": {
+    "dev": "NODE_ENV=development bin/www.mjs",
+    "start": "NODE_ENV=production bin/www.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpicGamer007/mysite.git"
+  },
+  "keywords": [
+    "personal-site",
+    "portfolio-site",
+    "epicgamer007"
+  ],
+  "author": "EpicGamer007",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/EpicGamer007/mysite/issues"
+  },
+  "homepage": "https://github.com/EpicGamer007/mysite#readme",
+  "private": "true",
+  "os": "linux",
+  "bin": {
+    "www": "./bin/www.mjs"
+  }
+}

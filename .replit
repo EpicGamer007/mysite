@@ -1,6 +1,13 @@
 run = ["npm", "start"]
 
-entrypoint = "main.sh"
+entrypoint = "app.mjs"
 
-[nix]
-channel = "stable-22_05"
+[unitTest]
+language = "nodejs"
+
+[packager]
+language = "nodejs"
+	[packager.features]
+	packageSearch = true
+	guessImports = false
+	enabledForHosting = true

@@ -1,2 +1,8 @@
-const str = "Hi! NODE_ENV is ";
-export default str;
+import express from "express";
+const app = express();
+
+import routes from "./routes";
+
+app.set("view engine", "ejs");
+
+export default app;

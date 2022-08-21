@@ -5,8 +5,9 @@
   "description": "My Personal Website",
   "main": "app.mjs",
   "scripts": {
-    "dev": "NODE_ENV=development bin/www.mjs",
-    "start": "NODE_ENV=production bin/www.mjs"
+    "dev": "NODE_ENV=development npm run startapp",
+    "start": "NODE_ENV=production npm run startapp",
+	"startapp": "mkdir -p ../tordir && PORT=4000 bin/www.mjs"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,11 @@
   "os": "linux",
   "bin": {
     "www": "./bin/www.mjs"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "lowdb": "^3.0.0"
   }
 }

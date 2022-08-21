@@ -1,13 +1,8 @@
-run = ["npm", "start"]
+run = ["npm", "-v"]
 
 entrypoint = "app.mjs"
-
-[unitTest]
-language = "nodejs"
 
 [packager]
 language = "nodejs"
 	[packager.features]
-	packageSearch = true
-	guessImports = false
 	enabledForHosting = true

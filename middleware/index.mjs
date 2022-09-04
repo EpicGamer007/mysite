@@ -1,1 +1,3 @@
-// Express middleware (for auth, sending headers, etc)
+import layouts from "express-ejs-layouts";
+
+export { layouts };

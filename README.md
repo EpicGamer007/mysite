@@ -35,3 +35,21 @@ router.get("/DBAddEndpoint", controllers.database.add);
 * Even better idea, store all blogs and their resources in a github repo, then fetch that and display it. i can write blogs through replit or make my own interface on the site.
 * Blogs may be stored in a db as well (such as a json one with lowdb) though this makes images much harder
 * Convert all images to webp before storing them, much better for websites
+
+## Random
+```js
+import { lightfetch as fetch } from  'lightfetch-node';
+
+const TOKEN = process.env.GITHUB_TOKEN || "FAKETOKEN";
+
+fetch("https://api.github.com/repos/EpicGamer007/images-storage/contents/README.md", {
+	method: "GET",
+	headers: {
+		"Authorization": `token ${TOKEN}`,
+		"User-Agent": "EpicGamer007"
+	}
+}).then(res => {
+	console.log(res.status);
+	console.log(res.json());
+});
+```

@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "NODE_ENV=development npm run startapp",
     "start": "NODE_ENV=production npm run startapp",
-	"startapp": "mkdir -p ../tordir && PORT=4000 bin/www.mjs"
+    "startapp": "mkdir -p ../tordir && PORT=4000 bin/www.mjs"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "express-ejs-layouts": "^2.5.1"
+    "express-ejs-layouts": "^2.5.1",
+    "lightfetch-node": "^1.1.1"
   }
 }

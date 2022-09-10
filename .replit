@@ -6,3 +6,7 @@ entrypoint = "app.mjs"
 language = "nodejs"
 	[packager.features]
 	enabledForHosting = true
+
+[auth]
+pageEnabled = false
+buttonEnabled = false

@@ -10,3 +10,6 @@ language = "nodejs"
 [auth]
 pageEnabled = false
 buttonEnabled = false
+
+[nix]
+channel = "stable-22_05"

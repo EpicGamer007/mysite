@@ -30,6 +30,7 @@
     "www": "./bin/www.mjs"
   },
   "dependencies": {
+    "compression": "^1.7.4",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "express-ejs-layouts": "^2.5.1"

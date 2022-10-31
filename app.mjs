@@ -12,8 +12,6 @@ app.set("layout extractMetas", true);
 app.set("json spaces", 4);
 app.set("x-powered-by", false);
 
-console.log(app.get("views"))
-
 app.use(routes);
 
 export default app;

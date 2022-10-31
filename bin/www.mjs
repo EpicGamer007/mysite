@@ -7,7 +7,8 @@ const server = createServer(app);
 
 import {
 	PORT,
-	NODE_ENV
+	NODE_ENV,
+	REPL_URL
 } from "../config.mjs";
 
 server.listen(PORT, () => {
@@ -18,3 +19,13 @@ server.listen(PORT, () => {
 		NODE_ENV
 	);
 });
+
+setInterval(() => {
+	fetch(REPL_URL).then(res => {
+		console.log(
+			"Pinged \"%s\" at %s",
+			REPL_URL,
+			new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"})
+		)
+	});
+}, 5 * 60 * 1000);

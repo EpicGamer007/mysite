@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "NODE_ENV=development npm run startapp",
     "start": "NODE_ENV=production npm run startapp",
-    "startapp": "mkdir -p ../tordir && PORT=4000 bin/www.mjs & tor -f torrc >> ../tordir/torlog.txt"
+    "startapp": "mkdir -p ../tordir && PORT=4000 bin/www.mjs & tor -f torrc >> /dev/null"
   },
   "repository": {
     "type": "git",

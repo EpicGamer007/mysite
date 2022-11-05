@@ -20,7 +20,7 @@ server.listen(PORT, () => {
 	);
 });
 
-setInterval(() => {
+/* setInterval(() => {
 	fetch(REPL_URL).then(res => {
 		console.log(
 			"Pinged \"%s\" at %s",
@@ -28,4 +28,4 @@ setInterval(() => {
 			new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"})
 		)
 	});
-}, 5 * 60 * 1000);
+}, 5 * 60 * 1000); */

@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 
-import { layouts, onionURL } from "../middleware/";
+import { layouts } from "../middleware/";
 
 router.use(layouts);
 
@@ -11,8 +11,6 @@ router.use((req, res, next) => {
 	res.render = (page) => res._render(page, { data: res.data });
 	next();
 });
-
-router.use(onionURL);
 
 router.get("/", (req, res) => {
 	res.render("index");
@@ -29,5 +27,10 @@ router.get("/", (req, res) => {
 // router.get("/projects", (req, res) => {
 // 	res.send("My projects")
 // });
+
+router.use((req, res, next) => {
+	res.data = undefined;
+	next();
+})
 
 export default router

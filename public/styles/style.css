@@ -1,0 +1,14 @@
+.profile {
+	border-radius: 50%;
+	height: 4rem;
+	border: 1px solid ghostwhite;
+	margin-left: 1rem;
+}
+
+.ipa {
+	display: inline;
+}
+
+.ipa:hover {
+	cursor: pointer;
+}
